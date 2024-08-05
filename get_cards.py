@@ -53,6 +53,6 @@ for card in cards:
     card_dict[card.id] = individual_dict
 
 
-with open('cards.json', 'w') as json_file: 
+with open('cards.json', 'w') as json_file:   
     json.dump(card_dict, json_file, indent=4)
 
