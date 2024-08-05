@@ -54,5 +54,5 @@ for card in cards:
 
 
 with open('cards.json', 'w') as json_file:   
-    json.dump(card_dict, json_file, indent=4)
+    json.dump(card_dict, json_file, indent=4)  
 
