@@ -1,2 +1,5 @@
 config.json
 *.DS_Store
+image_metadata/*.json
+images/*.png
+resized_images/*.png
