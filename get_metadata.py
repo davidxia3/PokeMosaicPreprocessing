@@ -3,12 +3,14 @@ import numpy as np
 import os
 import json
 
-images = os.listdir('images')
+folder = 'resized_images'
+
+images = os.listdir(folder)
 
 
 for image_path in images:
 
-    image = Image.open(os.path.join('images',image_path))
+    image = Image.open(os.path.join(folder,image_path))
 
     image = image.convert('RGB')
 
