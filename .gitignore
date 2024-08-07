@@ -3,3 +3,5 @@ config.json
 image_metadata/*.json
 images/*.png
 resized_images/*.png
+filtered_images/*.png
+filtered_metadata/*.json
