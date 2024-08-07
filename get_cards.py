@@ -19,7 +19,6 @@ def custom_get(url, params=None):
 RestClient.get = custom_get
 
 cards = Card.all()
-
 card_dict = {}
 for card in cards:
     price_normal = None
@@ -43,7 +42,7 @@ for card in cards:
         'name': card.name,
         'supertype': card.supertype,
         'rarity': card.rarity,
-        'image': card.images.large,
+        'image': card.images.small,
         'price_normal': price_normal,
         'price_holo': price_holo,
         'price_reverse': price_reverse,

@@ -12,8 +12,8 @@ for card in cards:
     url = cards[card]["image"]
 
     set = url.split('/')[-2]
-    number = url.split('/')[-1].split('_')[0]
-    filename = set + '-' + number + '.png'
+    number = url.split('/')[-1]
+    filename = set + '-' + number
     file_path = os.path.join(folder_path, filename)
 
     response = requests.get(url)
@@ -22,3 +22,4 @@ for card in cards:
             file.write(response.content)
     else:
         print('error:' + file_path)
+

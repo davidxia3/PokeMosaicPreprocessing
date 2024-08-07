@@ -4,7 +4,7 @@ from PIL import Image
 source_folder = 'images'
 destination_folder = 'resized_images'
 
-target_dimension = (734, 1024)
+target_dimension = (245, 342)
 
 target_width, target_height = target_dimension
     
